@@ -13,18 +13,18 @@
 * 5、理论完全兼容现有 iOS 8 以上系统版本
 
 ## 2、图片示例
-![BAAlertController-Swift1](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift1.png)
-![BAAlertController-Swift2](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift2.png)
-![BAAlertController-Swift3](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift3.png)
-![BAAlertController-Swift4](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift4.png)
-![BAAlertController-Swift5](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift5.png)
-![BAAlertController-Swift6](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift6.png)
-![BAAlertController-Swift7](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift7.png)
+![BAAlertController1](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController1.png)
+![BAAlertController2](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController2.png)
+![BAAlertController3](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController3.png)
+![BAAlertController4](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController4.png)
+![BAAlertController-5](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift5.png)
+![BAAlertController6](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController6.png)
+![BAAlertController7](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController7.png)
 
 ## 3、安装、导入示例和源码地址
 * 1、pod 导入【最新版本：![](https://img.shields.io/cocoapods/v/BAAlertController-Swift.svg?style=flat)】： <br>
+ `OC:    pod 'BAAlertController'` <br>
  `Swift: pod 'BAAlertController-Swift'` <br>
-  `OC:   pod 'BAAlertController'` <br>
 
 如果发现 `pod search BAAlertController-Swift` 搜索出来的不是最新版本，需要在终端执行 cd 转换文件路径命令退回到 desktop，然后执行 `pod setup` 命令更新本地spec缓存（可能需要几分钟），然后再搜索就可以了。<br>
 具体步骤：
@@ -42,144 +42,6 @@
 ## 4、BAAlertController-Swift 的类结构及 demo 示例
 ![BAAlertController-Swift](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController.png)
 
-### BAAlertController-Swift.swift
-```
-import Foundation
-import UIKit
-
-public typealias BAKit_UIAlertController_ButtonActionBlock = (_ index:Int, _ alertController:UIAlertController) -> ()
-public typealias BAKit_UIAlertController_TextFieldConfigurationActionBlock = (_ textField:UITextField, _ index:Int) -> ()
-
-extension UIAlertController {
-    
-    /// UIAlertController：快速创建一个 普通的 alert
-    ///
-    /// - Parameters:
-    ///   - viewController: viewController
-    ///   - title: 标题
-    ///   - message: 内容
-    ///   - buttonTitleArray: 按钮标题数组
-    ///   - buttonTitleColorArray: 按钮标题颜色数组
-    ///   - actionBlock: 按钮点击事件 block
-    public func ba_alertController(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
-        
-        self.ba_creatAlertController(UIAlertControllerStyle.alert, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
-    }
-    
-    /// UIAlertController：快速创建一个 普通的 actionSheet
-    ///
-    /// - Parameters:
-    ///   - viewController: viewController
-    ///   - title: 标题
-    ///   - message: 内容
-    ///   - buttonTitleArray: 按钮标题数组
-    ///   - buttonTitleColorArray: 按钮标题颜色数组
-    ///   - actionBlock: 按钮点击事件 block
-    public func ba_actionSheet(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
-        
-        self.ba_creatAlertController(UIAlertControllerStyle.actionSheet, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
-    }
-    
-    /// UIAlertController： 快速创建一个系统 普通 带 textField 的 alert
-    ///
-    /// - Parameters:
-    ///   - viewController: viewController
-    ///   - title: 标题
-    ///   - message: 内容
-    ///   - buttonTitleArray: 按钮标题数组
-    ///   - buttonTitleColorArray: 按钮标题颜色数组
-    ///   - buttonDisabledWithTitleArray: 按钮标题颜色数组(默认不能点击)
-    ///   - textFieldPlaceholderArray: textField 的 Placeholder 数组
-    ///   - textFieldConfigurationActionBlock: textField 配置 block
-    ///   - actionBlock: 按钮点击事件 block
-    public func ba_alertController(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, buttonDisabledWithTitleArray:Array<String?>,
-                                   textFieldPlaceholderArray:Array<String?>,
-                                   textFieldConfigurationActionBlock: BAKit_UIAlertController_TextFieldConfigurationActionBlock?, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
-        
-        self.ba_creatAlertController(UIAlertControllerStyle.alert, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: buttonDisabledWithTitleArray, textFieldPlaceholderArray: textFieldPlaceholderArray, textFieldConfigurationActionBlock: textFieldConfigurationActionBlock, actionBlock: actionBlock)
-    }
-    
-    private func ba_creatAlertController(_ preferredStyle:UIAlertControllerStyle,
-                                         viewController: UIViewController,
-                                         title: String,
-                                         message: String,
-                                         buttonTitleArray:Array<String?>,
-                                         buttonTitleColorArray:Array<UIColor?>,
-                                         buttonDisabledWithTitleArray:Array<String?>,
-                                         textFieldPlaceholderArray:Array<String?>,
-                                         textFieldConfigurationActionBlock: BAKit_UIAlertController_TextFieldConfigurationActionBlock?,
-                                         actionBlock : BAKit_UIAlertController_ButtonActionBlock?) {
-        
-        let alertController = UIAlertController.init(title: title, message: message, preferredStyle: preferredStyle)
-        
-        if buttonTitleArray.count > 0
-        {
-            for i:Int in 0..<buttonTitleArray.count
-            {
-                let buttonTitle = buttonTitleArray[i]
-                
-                let action = UIAlertAction.init(title: buttonTitle, style: UIAlertActionStyle.default, handler: { (action) in
-                    actionBlock!(i, alertController)
-                })
-                alertController.addAction(action)
-                
-                for j:Int in 0..<buttonDisabledWithTitleArray.count
-                {
-                    if (buttonDisabledWithTitleArray[j]?.elementsEqual(buttonTitle!))!
-                    {
-                        action.isEnabled = false
-                    }
-                }
-                // 处理按钮字体颜色，待后期版本更新
-                
-            }
-        }
-        
-        if preferredStyle == UIAlertControllerStyle.alert && textFieldPlaceholderArray.count > 0
-        {
-            for i:Int in 0..<textFieldPlaceholderArray.count
-            {
-                alertController.addTextField(configurationHandler: { (textField) in
-                    textField.placeholder = textFieldPlaceholderArray[i]
-                    
-                    textFieldConfigurationActionBlock!(textField, i)
-                })
-            }
-        }
-        
-        if preferredStyle == UIAlertControllerStyle.actionSheet
-        {
-            let action = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
-            alertController.addAction(action)
-        }
-        
-        viewController.ba_currentViewController()?.present(alertController, animated: true, completion: nil)
-        
-    }
-}
-
-extension UIViewController {
-    public func ba_currentViewController() -> UIViewController? {
-        
-        var presentedVC = UIApplication.shared.keyWindow?.rootViewController
-        while let pVC = presentedVC?.presentedViewController
-        {
-            presentedVC = pVC
-        }
-        
-        if presentedVC == nil {
-            print("UIAlertController Error: You don't have any views set. You may be calling in viewDidload. Try viewDidappear.")
-        }
-        return presentedVC
-    }
-}
-```
 
 ### UIAlertController+BAKit.swift
 ```
