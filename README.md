@@ -13,7 +13,7 @@
 * 5、理论完全兼容现有 iOS 8 以上系统版本
 
 ## 2、图片示例
-![BAAlertController1](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController1.png)
+![BAAlertController1](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController1.png)
 ![BAAlertController2](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController2.png)
 ![BAAlertController3](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController3.png)
 ![BAAlertController4](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController4.png)
@@ -40,7 +40,7 @@
 
 
 ## 4、BAAlertController-Swift 的类结构及 demo 示例
-![BAAlertController-Swift](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController.png)
+![BAAlertController-Swift](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController.jpg)
 
 
 ### UIAlertController+BAKit.swift
