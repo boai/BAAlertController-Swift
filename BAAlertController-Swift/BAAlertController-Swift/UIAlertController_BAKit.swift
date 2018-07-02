@@ -1,9 +1,9 @@
 //
-//  UIAlertController+BAKit.swift
-//  yunLianApp
+//  UIAlertController_BAKit.swift
+//  BAKit
 //
 //  Created by boai on 2018/1/6.
-//  Copyright © 2018年 云联惠. All rights reserved.
+//  Copyright © 2018年 boai. All rights reserved.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ import UIKit
 public typealias BAKit_UIAlertController_ButtonActionBlock = (_ index:Int, _ alertController:UIAlertController) -> ()
 public typealias BAKit_UIAlertController_TextFieldConfigurationActionBlock = (_ textField:UITextField, _ index:Int) -> ()
 
-extension UIAlertController {
+public extension UIAlertController {
     
     /// UIAlertController：快速创建一个 普通的 alert
     ///
@@ -24,8 +24,8 @@ extension UIAlertController {
     ///   - buttonTitleColorArray: 按钮标题颜色数组
     ///   - actionBlock: 按钮点击事件 block
     public func ba_alertController(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
+                                   message: String, buttonTitleArray:Array<String>?,
+                                   buttonTitleColorArray:Array<UIColor>?, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
         self.ba_creatAlertController(UIAlertControllerStyle.alert, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
     }
@@ -40,8 +40,8 @@ extension UIAlertController {
     ///   - buttonTitleColorArray: 按钮标题颜色数组
     ///   - actionBlock: 按钮点击事件 block
     public func ba_actionSheet(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
+                               message: String, buttonTitleArray:Array<String>?,
+                               buttonTitleColorArray:Array<UIColor>?, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
         self.ba_creatAlertController(UIAlertControllerStyle.actionSheet, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
     }
@@ -59,41 +59,41 @@ extension UIAlertController {
     ///   - textFieldConfigurationActionBlock: textField 配置 block
     ///   - actionBlock: 按钮点击事件 block
     public func ba_alertController(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, buttonDisabledWithTitleArray:Array<String?>,
-                                   textFieldPlaceholderArray:Array<String?>,
-                                   textFieldConfigurationActionBlock: BAKit_UIAlertController_TextFieldConfigurationActionBlock?, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
+                                   message: String, buttonTitleArray:Array<String>?,
+                                   buttonTitleColorArray:Array<UIColor>?, buttonDisabledWithTitleArray:Array<String>?,
+                                   textFieldPlaceholderArray:Array<String>?,
+                                   textFieldConfigurationActionBlock:  BAKit_UIAlertController_TextFieldConfigurationActionBlock?, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
         self.ba_creatAlertController(UIAlertControllerStyle.alert, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: buttonDisabledWithTitleArray, textFieldPlaceholderArray: textFieldPlaceholderArray, textFieldConfigurationActionBlock: textFieldConfigurationActionBlock, actionBlock: actionBlock)
     }
     
-    private func ba_creatAlertController(_ preferredStyle:UIAlertControllerStyle,
-                                         viewController: UIViewController,
-                                         title: String,
-                                         message: String,
-                                         buttonTitleArray:Array<String?>,
-                                         buttonTitleColorArray:Array<UIColor?>,
-                                         buttonDisabledWithTitleArray:Array<String?>,
-                                         textFieldPlaceholderArray:Array<String?>,
-                                         textFieldConfigurationActionBlock: BAKit_UIAlertController_TextFieldConfigurationActionBlock?,
-                                         actionBlock : BAKit_UIAlertController_ButtonActionBlock?) {
+    public func ba_creatAlertController(_ preferredStyle:UIAlertControllerStyle,
+                                        viewController: UIViewController,
+                                        title: String,
+                                        message: String,
+                                        buttonTitleArray:Array<String>?,
+                                        buttonTitleColorArray:Array<UIColor>?,
+                                        buttonDisabledWithTitleArray:Array<String>?,
+                                        textFieldPlaceholderArray:Array<String>?,
+                                        textFieldConfigurationActionBlock:  BAKit_UIAlertController_TextFieldConfigurationActionBlock?,
+                                        actionBlock : BAKit_UIAlertController_ButtonActionBlock?) {
         
         let alertController = UIAlertController.init(title: title, message: message, preferredStyle: preferredStyle)
         
-        if buttonTitleArray.count > 0
+        if (buttonTitleArray?.count)! > 0
         {
-            for i:Int in 0..<buttonTitleArray.count
+            for i:Int in 0..<(buttonTitleArray?.count)!
             {
-                let buttonTitle = buttonTitleArray[i]
+                let buttonTitle = buttonTitleArray![i]
                 
                 let action = UIAlertAction.init(title: buttonTitle, style: UIAlertActionStyle.default, handler: { (action) in
                     actionBlock!(i, alertController)
                 })
                 alertController.addAction(action)
                 
-                for j:Int in 0..<buttonDisabledWithTitleArray.count
+                for j:Int in 0..<(buttonDisabledWithTitleArray?.count)!
                 {
-                    if (buttonDisabledWithTitleArray[j]?.elementsEqual(buttonTitle!))!
+                    if (buttonDisabledWithTitleArray![j].elementsEqual(buttonTitle))
                     {
                         action.isEnabled = false
                     }
@@ -103,12 +103,12 @@ extension UIAlertController {
             }
         }
         
-        if preferredStyle == UIAlertControllerStyle.alert && textFieldPlaceholderArray.count > 0
+        if preferredStyle == UIAlertControllerStyle.alert && (textFieldPlaceholderArray?.count)! > 0
         {
-            for i:Int in 0..<textFieldPlaceholderArray.count
+            for i:Int in 0..<(textFieldPlaceholderArray?.count)!
             {
                 alertController.addTextField(configurationHandler: { (textField) in
-                    textField.placeholder = textFieldPlaceholderArray[i]
+                    textField.placeholder = textFieldPlaceholderArray?[i]
                     
                     textFieldConfigurationActionBlock!(textField, i)
                 })
@@ -126,7 +126,7 @@ extension UIAlertController {
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
     public func ba_currentViewController() -> UIViewController? {
         
         var presentedVC = UIApplication.shared.keyWindow?.rootViewController

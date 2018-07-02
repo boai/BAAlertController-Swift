@@ -12,7 +12,7 @@
 		C4316F9A2000AEF900DD5BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4316F982000AEF900DD5BA8 /* Main.storyboard */; };
 		C4316F9C2000AEF900DD5BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4316F9B2000AEF900DD5BA8 /* Assets.xcassets */; };
 		C4316F9F2000AEF900DD5BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4316F9D2000AEF900DD5BA8 /* LaunchScreen.storyboard */; };
-		C4316FA82000AF9900DD5BA8 /* UIAlertController+BAKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4316FA72000AF9900DD5BA8 /* UIAlertController+BAKit.swift */; };
+		C4316FA82000AF9900DD5BA8 /* UIAlertController_BAKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4316FA72000AF9900DD5BA8 /* UIAlertController_BAKit.swift */; };
 		C4316FAB2000B25600DD5BA8 /* BAAlertController_Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4316FAA2000B25600DD5BA8 /* BAAlertController_Version.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		C4316F9B2000AEF900DD5BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4316F9E2000AEF900DD5BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4316FA02000AEF900DD5BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4316FA72000AF9900DD5BA8 /* UIAlertController+BAKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+BAKit.swift"; sourceTree = "<group>"; };
+		C4316FA72000AF9900DD5BA8 /* UIAlertController_BAKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController_BAKit.swift; sourceTree = "<group>"; };
 		C4316FAA2000B25600DD5BA8 /* BAAlertController_Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAAlertController_Version.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +72,7 @@
 		C4316FA62000AF8F00DD5BA8 /* BAAlertController-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				C4316FA72000AF9900DD5BA8 /* UIAlertController+BAKit.swift */,
+				C4316FA72000AF9900DD5BA8 /* UIAlertController_BAKit.swift */,
 				C4316FAA2000B25600DD5BA8 /* BAAlertController_Version.swift */,
 			);
 			path = "BAAlertController-Swift";
@@ -153,7 +153,7 @@
 				C4316F972000AEF900DD5BA8 /* ViewController.swift in Sources */,
 				C4316F952000AEF900DD5BA8 /* AppDelegate.swift in Sources */,
 				C4316FAB2000B25600DD5BA8 /* BAAlertController_Version.swift in Sources */,
-				C4316FA82000AF9900DD5BA8 /* UIAlertController+BAKit.swift in Sources */,
+				C4316FA82000AF9900DD5BA8 /* UIAlertController_BAKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +291,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JB3QR65942;
+				DEVELOPMENT_TEAM = A7FRU6ZJRL;
 				INFOPLIST_FILE = "BAAlertController-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yunlianhui.yunlianApp-au.BAAlertController-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boaihome.BAAlertController-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,10 +306,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JB3QR65942;
+				DEVELOPMENT_TEAM = A7FRU6ZJRL;
 				INFOPLIST_FILE = "BAAlertController-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yunlianhui.yunlianApp-au.BAAlertController-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boaihome.BAAlertController-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
