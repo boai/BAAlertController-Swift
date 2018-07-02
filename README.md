@@ -238,6 +238,10 @@ extension UIViewController {
  OC 版 ：https://github.com/BAHome/BAAlertController
  Swift 版 ：https://github.com/BAHome/BAAlertController-Swift
  
+ 最新更新时间：2018-07-02 【倒叙】
+ 最新Version：【Version：1.0.1】
+ 更新内容：
+ 1.0.1.1、适配 swift 4.1
  
  最新更新时间：2018-01-06 【倒叙】
  最新Version：【Version：1.0.0】
