@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let title0 = "博爱温馨提示"
     let msg0 = "欢迎使用 iPhone SE，迄今最高性能的 4 英寸 iPhone。在打造这款手机时，我们在深得人心的 4 英寸设计基础上，从里到外重新构想。它所采用的 A9 芯片，正是在 iPhone 6s 上使用的先进芯片。1200 万像素的摄像头能拍出令人叹为观止的精彩照片和 4K 视频，而 Live Photos 则会让你的照片栩栩如生。这一切，成就了一款外形小巧却异常强大的 iPhone。"
     let buttonTitleArray = ["取消", "确定"]
+//    let buttonTitleColorArray = [UIColor.green]
     let buttonTitleColorArray = [UIColor.green, UIColor.red]
 
     override func viewDidLoad() {

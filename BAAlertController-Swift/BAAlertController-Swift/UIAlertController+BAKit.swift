@@ -140,11 +140,11 @@ extension UIAlertController {
                 var buttonTitleColorArray = buttonTitleColorArray
                 
                 if buttonTitleColorArray.count == 0 || buttonTitleColorArray.count < buttonTitleArray.count {
-                    var mutArr : NSMutableArray!
+                    var mutArr:NSMutableArray = NSMutableArray()
                     for _:Int in 0..<buttonTitleArray.count {
-                        mutArr?.add(UIColor())
+                        mutArr.add(UIColor.blue)
                     }
-                    buttonTitleColorArray = mutArr?.mutableCopy() as! [UIColor?]
+                    buttonTitleColorArray = mutArr.mutableCopy() as! [UIColor?]
                 }
                 
                 if buttonTitleColorArray.count > 0 {
