@@ -44,9 +44,9 @@ class ViewController: UIViewController {
     func ba_alert2() -> Void {
         
         let attributedTitle = NSMutableAttributedString.init(string: title0)
-        attributedTitle.addAttributes([NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 30),
-                                        NSAttributedStringKey.foregroundColor:UIColor.purple],
-                                       range:NSMakeRange(0, (title0.characters.count)))
+        attributedTitle.addAttributes([NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 30),
+                                       NSAttributedString.Key.foregroundColor:UIColor.purple],
+                                       range:NSMakeRange(0, (title0.count)))
         
         //消息内容样式（灰色斜体）
         let messageFontDescriptor = UIFontDescriptor.init(fontAttributes: [
@@ -55,9 +55,9 @@ class ViewController: UIViewController {
             ])
         let messageFont = UIFont.init(descriptor: messageFontDescriptor, size: 13.0)
         let attributedMessage = NSMutableAttributedString.init(string: msg0)
-        attributedMessage.addAttributes([NSAttributedStringKey.font:messageFont,
-                                        NSAttributedStringKey.foregroundColor:UIColor.red],
-                                       range:NSMakeRange(0, (msg0.characters.count)))
+        attributedMessage.addAttributes([NSAttributedString.Key.font:messageFont,
+                                         NSAttributedString.Key.foregroundColor:UIColor.red],
+                                       range:NSMakeRange(0, (msg0.count)))
                 
         UIAlertController().ba_actionSheet(self, title: nil, attributedTitle: attributedTitle, message: nil, attributedMessage: attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray) { (index, alertController) in
             print("点我干嘛？index：", index)
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
                 textField.isSecureTextEntry = true
             }
             
-            NotificationCenter.default.addObserver(self, selector: #selector(self.handleAlertTextFieldDidChangeAction(_ :)), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.handleAlertTextFieldDidChangeAction(_ :)), name: UITextField.textDidChangeNotification, object: textField)
             
         }) { (index, alertController) in
             

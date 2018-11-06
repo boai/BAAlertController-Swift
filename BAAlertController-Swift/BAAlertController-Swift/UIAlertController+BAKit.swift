@@ -32,7 +32,7 @@ extension UIAlertController {
                                    buttonTitleColorArray:Array<UIColor?>,
                                    actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
-        self.ba_creatAlertController(UIAlertControllerStyle.alert, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage:attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
+        self.ba_creatAlertController(UIAlertController.Style.alert, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage:attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
     }
     
     /// UIAlertController：快速创建一个 普通的 actionSheet
@@ -53,7 +53,7 @@ extension UIAlertController {
                                buttonTitleColorArray:Array<UIColor?>,
                                actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
-        self.ba_creatAlertController(UIAlertControllerStyle.actionSheet, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage: attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
+        self.ba_creatAlertController(UIAlertController.Style.actionSheet, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage: attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
     }
     
     /// UIAlertController： 快速创建一个系统 普通 带 textField 的 alert
@@ -79,10 +79,10 @@ extension UIAlertController {
                                    textFieldPlaceholderArray:Array<String?>,
                                    textFieldConfigurationActionBlock: BAKit_UIAlertController_TextFieldConfigurationActionBlock?, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
-        self.ba_creatAlertController(UIAlertControllerStyle.alert, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage:attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: buttonDisabledWithTitleArray, textFieldPlaceholderArray: textFieldPlaceholderArray, textFieldConfigurationActionBlock: textFieldConfigurationActionBlock, actionBlock: actionBlock)
+        self.ba_creatAlertController(UIAlertController.Style.alert, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage:attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: buttonDisabledWithTitleArray, textFieldPlaceholderArray: textFieldPlaceholderArray, textFieldConfigurationActionBlock: textFieldConfigurationActionBlock, actionBlock: actionBlock)
     }
     
-    private func ba_creatAlertController(_ preferredStyle:UIAlertControllerStyle,
+    private func ba_creatAlertController(_ preferredStyle:UIAlertController.Style,
                                          viewController: UIViewController,
                                          title: String?,
                                          attributedTitle: NSMutableAttributedString?,
@@ -123,7 +123,7 @@ extension UIAlertController {
             {
                 let buttonTitle = buttonTitleArray[i]
                 
-                let action = UIAlertAction.init(title: buttonTitle, style: UIAlertActionStyle.default, handler: { (action) in
+                let action = UIAlertAction.init(title: buttonTitle, style: UIAlertAction.Style.default, handler: { (action) in
                     actionBlock!(i, alertController)
                 })
                 alertController.addAction(action)
@@ -140,11 +140,11 @@ extension UIAlertController {
                 var buttonTitleColorArray = buttonTitleColorArray
                 
                 if buttonTitleColorArray.count == 0 || buttonTitleColorArray.count < buttonTitleArray.count {
-                    var mutArr:NSMutableArray = NSMutableArray()
+                    var mutArr = [Any]()
                     for _:Int in 0..<buttonTitleArray.count {
-                        mutArr.add(UIColor.blue)
+                        mutArr.append(UIColor.blue)
                     }
-                    buttonTitleColorArray = mutArr.mutableCopy() as! [UIColor?]
+                    buttonTitleColorArray = mutArr as! [UIColor]
                 }
                 
                 if buttonTitleColorArray.count > 0 {
@@ -153,7 +153,7 @@ extension UIAlertController {
             }
         }
         
-        if preferredStyle == UIAlertControllerStyle.alert && textFieldPlaceholderArray.count > 0
+        if preferredStyle == UIAlertController.Style.alert && textFieldPlaceholderArray.count > 0
         {
             for i:Int in 0..<textFieldPlaceholderArray.count
             {
@@ -165,9 +165,9 @@ extension UIAlertController {
             }
         }
         
-        if preferredStyle == UIAlertControllerStyle.actionSheet
+        if preferredStyle == UIAlertController.Style.actionSheet
         {
-            let action = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
+            let action = UIAlertAction.init(title: "取消", style: UIAlertAction.Style.cancel, handler: nil)
             alertController.addAction(action)
         }
         

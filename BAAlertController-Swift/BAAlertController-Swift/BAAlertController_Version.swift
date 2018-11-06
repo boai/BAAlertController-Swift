@@ -24,6 +24,7 @@ import Foundation
  最新Version：【Version：1.0.1】
  更新内容：
  1.0.1.1、UIAlertController-alert/actionSheet，可以自由设置按钮颜色、attributedTitle、attributedMessage
+ 1.0.1.2、部分代码优化，全面适配 swift 4.2
  
  最新更新时间：2018-01-06 【倒叙】
  最新Version：【Version：1.0.0】
