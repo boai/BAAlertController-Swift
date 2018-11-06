@@ -14,12 +14,12 @@
 
 ## 2、图片示例
 ![BAAlertController1](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController1.png)
-![BAAlertController2](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController2.png)
-![BAAlertController3](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController3.png)
-![BAAlertController4](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController4.png)
-![BAAlertController-5](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift5.png)
-![BAAlertController6](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController6.png)
-![BAAlertController7](https://github.com/boai/BAAlertController-Swift/blob/master/Images/BAAlertController7.png)
+![BAAlertController2](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController2.png)
+![BAAlertController3](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController3.png)
+![BAAlertController4](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController4.png)
+![BAAlertController-5](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController-Swift5.png)
+![BAAlertController6](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController6.png)
+![BAAlertController7](https://github.com/BAHome/BAAlertController-Swift/blob/master/Images/BAAlertController7.png)
 
 ## 3、安装、导入示例和源码地址
 * 1、pod 导入【最新版本：![](https://img.shields.io/cocoapods/v/BAAlertController-Swift.svg?style=flat)】： <br>
@@ -238,10 +238,6 @@ extension UIViewController {
  OC 版 ：https://github.com/BAHome/BAAlertController
  Swift 版 ：https://github.com/BAHome/BAAlertController-Swift
  
- 最新更新时间：2018-07-02 【倒叙】
- 最新Version：【Version：1.0.1】
- 更新内容：
- 1.0.1.1、适配 swift 4.1
  
  最新更新时间：2018-01-06 【倒叙】
  最新Version：【Version：1.0.0】
