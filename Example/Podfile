@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'BAAlertController-Swift_Example' do
+  pod 'BAAlertController-Swift', :path => '../'
+
+end

@@ -33,7 +33,7 @@
   - pod search BAAlertController-Swift
 * 2、文件夹拖入：下载demo，把 BAAlertController-Swift 文件夹拖入项目即可，<br>
 * 3、导入头文件：<br>
-`  Swift 无需导入 `<br>
+`  Swift import BAAlertController_Swift `<br>
 * 4、项目源码地址：<br>
  OC 版 ：[https://github.com/BAHome/BAAlertController](https://github.com/BAHome/BAAlertController)<br>
  Swift 版 ：[https://github.com/BAHome/BAAlertController-Swift](https://github.com/BAHome/BAAlertController-Swift)<br>
@@ -62,11 +62,16 @@ extension UIAlertController {
     ///   - buttonTitleArray: 按钮标题数组
     ///   - buttonTitleColorArray: 按钮标题颜色数组
     ///   - actionBlock: 按钮点击事件 block
-    public func ba_alertController(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
+    public func ba_alertController(_ viewController: UIViewController,
+                                   title: String?,
+                                   attributedTitle: NSMutableAttributedString?,
+                                   message: String?,
+                                   attributedMessage: NSMutableAttributedString?,
+                                   buttonTitleArray:Array<String?>,
+                                   buttonTitleColorArray:Array<UIColor?>,
+                                   actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
-        self.ba_creatAlertController(UIAlertControllerStyle.alert, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
+        self.ba_creatAlertController(UIAlertController.Style.alert, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage:attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
     }
     
     /// UIAlertController：快速创建一个 普通的 actionSheet
@@ -78,11 +83,16 @@ extension UIAlertController {
     ///   - buttonTitleArray: 按钮标题数组
     ///   - buttonTitleColorArray: 按钮标题颜色数组
     ///   - actionBlock: 按钮点击事件 block
-    public func ba_actionSheet(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
+    public func ba_actionSheet(_ viewController: UIViewController,
+                               title: String?,
+                               attributedTitle: NSMutableAttributedString?,
+                               message: String?,
+                               attributedMessage: NSMutableAttributedString?,
+                               buttonTitleArray:Array<String?>,
+                               buttonTitleColorArray:Array<UIColor?>,
+                               actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
-        self.ba_creatAlertController(UIAlertControllerStyle.actionSheet, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
+        self.ba_creatAlertController(UIAlertController.Style.actionSheet, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage: attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: [], textFieldPlaceholderArray: [], textFieldConfigurationActionBlock: nil , actionBlock: actionBlock)
     }
     
     /// UIAlertController： 快速创建一个系统 普通 带 textField 的 alert
@@ -97,19 +107,26 @@ extension UIAlertController {
     ///   - textFieldPlaceholderArray: textField 的 Placeholder 数组
     ///   - textFieldConfigurationActionBlock: textField 配置 block
     ///   - actionBlock: 按钮点击事件 block
-    public func ba_alertController(_ viewController: UIViewController, title: String,
-                                   message: String, buttonTitleArray:Array<String?>,
-                                   buttonTitleColorArray:Array<UIColor?>, buttonDisabledWithTitleArray:Array<String?>,
+    public func ba_alertController(_ viewController: UIViewController,
+                                   title: String?,
+                                   attributedTitle: NSMutableAttributedString?,
+                                   message: String?,
+                                   attributedMessage: NSMutableAttributedString?,
+                                   buttonTitleArray:Array<String?>,
+                                   buttonTitleColorArray:Array<UIColor?>,
+                                   buttonDisabledWithTitleArray:Array<String?>,
                                    textFieldPlaceholderArray:Array<String?>,
                                    textFieldConfigurationActionBlock: BAKit_UIAlertController_TextFieldConfigurationActionBlock?, actionBlock : @escaping BAKit_UIAlertController_ButtonActionBlock) {
         
-        self.ba_creatAlertController(UIAlertControllerStyle.alert, viewController: viewController, title: title, message: message, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: buttonDisabledWithTitleArray, textFieldPlaceholderArray: textFieldPlaceholderArray, textFieldConfigurationActionBlock: textFieldConfigurationActionBlock, actionBlock: actionBlock)
+        self.ba_creatAlertController(UIAlertController.Style.alert, viewController: viewController, title: title, attributedTitle:attributedTitle, message: message, attributedMessage:attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray, buttonDisabledWithTitleArray: buttonDisabledWithTitleArray, textFieldPlaceholderArray: textFieldPlaceholderArray, textFieldConfigurationActionBlock: textFieldConfigurationActionBlock, actionBlock: actionBlock)
     }
     
-    private func ba_creatAlertController(_ preferredStyle:UIAlertControllerStyle,
+    private func ba_creatAlertController(_ preferredStyle:UIAlertController.Style,
                                          viewController: UIViewController,
-                                         title: String,
-                                         message: String,
+                                         title: String?,
+                                         attributedTitle: NSMutableAttributedString?,
+                                         message: String?,
+                                         attributedMessage: NSMutableAttributedString?,
                                          buttonTitleArray:Array<String?>,
                                          buttonTitleColorArray:Array<UIColor?>,
                                          buttonDisabledWithTitleArray:Array<String?>,
@@ -117,15 +134,35 @@ extension UIAlertController {
                                          textFieldConfigurationActionBlock: BAKit_UIAlertController_TextFieldConfigurationActionBlock?,
                                          actionBlock : BAKit_UIAlertController_ButtonActionBlock?) {
         
+//        //消息内容样式（灰色斜体）
+//        let messageFontDescriptor = UIFontDescriptor.init(fontAttributes: [
+//            UIFontDescriptor.AttributeName.family:"Arial",
+//            UIFontDescriptor.AttributeName.name:"Arial-ItalicMT",
+//            ])
+//        
+//        let messageFont = UIFont.init(descriptor: messageFontDescriptor, size: 13.0)
+//        let messageAttribute = NSMutableAttributedString.init(string: message)
+//        messageAttribute.addAttributes([NSAttributedStringKey.font:messageFont,
+//                                        NSAttributedStringKey.foregroundColor:UIColor.red],
+//                                       range:NSMakeRange(0, (message.characters.count)))
+        
         let alertController = UIAlertController.init(title: title, message: message, preferredStyle: preferredStyle)
         
+        if ((attributedTitle?.length) != nil) {
+            alertController.setValue(attributedTitle, forKey: "attributedTitle")
+        }
+
+        if ((attributedMessage?.length) != nil) {
+            alertController.setValue(attributedMessage, forKey: "attributedMessage")
+        }
+
         if buttonTitleArray.count > 0
         {
             for i:Int in 0..<buttonTitleArray.count
             {
                 let buttonTitle = buttonTitleArray[i]
                 
-                let action = UIAlertAction.init(title: buttonTitle, style: UIAlertActionStyle.default, handler: { (action) in
+                let action = UIAlertAction.init(title: buttonTitle, style: UIAlertAction.Style.default, handler: { (action) in
                     actionBlock!(i, alertController)
                 })
                 alertController.addAction(action)
@@ -137,12 +174,25 @@ extension UIAlertController {
                         action.isEnabled = false
                     }
                 }
-                // 处理按钮字体颜色，待后期版本更新
                 
+                // 处理按钮字体颜色，待后期版本更新
+                var buttonTitleColorArray = buttonTitleColorArray
+                
+                if buttonTitleColorArray.count == 0 || buttonTitleColorArray.count < buttonTitleArray.count {
+                    var mutArr = [Any]()
+                    for _:Int in 0..<buttonTitleArray.count {
+                        mutArr.append(UIColor.blue)
+                    }
+                    buttonTitleColorArray = mutArr as! [UIColor]
+                }
+                
+                if buttonTitleColorArray.count > 0 {
+                    action.setValue(buttonTitleColorArray[i], forKey: "titleTextColor")
+                }
             }
         }
         
-        if preferredStyle == UIAlertControllerStyle.alert && textFieldPlaceholderArray.count > 0
+        if preferredStyle == UIAlertController.Style.alert && textFieldPlaceholderArray.count > 0
         {
             for i:Int in 0..<textFieldPlaceholderArray.count
             {
@@ -154,9 +204,9 @@ extension UIAlertController {
             }
         }
         
-        if preferredStyle == UIAlertControllerStyle.actionSheet
+        if preferredStyle == UIAlertController.Style.actionSheet
         {
-            let action = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
+            let action = UIAlertAction.init(title: "取消", style: UIAlertAction.Style.cancel, handler: nil)
             alertController.addAction(action)
         }
         
@@ -185,20 +235,37 @@ extension UIViewController {
 ### demo 示例
 ```
     func ba_alert()  {
-        UIAlertController().ba_alertController(self, title: title0, message: msg0, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: []) { (index, alertController) in
+        UIAlertController().ba_alertController(self, title: title0, attributedTitle:nil, message: msg0, attributedMessage:nil, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: []) { (index, alertController) in
             
             print("点我干嘛？index：", index)
         }
     }
     
     func ba_alert2() -> Void {
-        UIAlertController().ba_actionSheet(self, title: title0, message: msg0, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: []) { (index, alertController) in
+        
+        let attributedTitle = NSMutableAttributedString.init(string: title0)
+        attributedTitle.addAttributes([NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 30),
+                                       NSAttributedString.Key.foregroundColor:UIColor.purple],
+                                      range:NSMakeRange(0, (title0.count)))
+        
+        //消息内容样式（灰色斜体）
+        let messageFontDescriptor = UIFontDescriptor.init(fontAttributes: [
+            UIFontDescriptor.AttributeName.family:"Arial",
+            UIFontDescriptor.AttributeName.name:"Arial-ItalicMT",
+            ])
+        let messageFont = UIFont.init(descriptor: messageFontDescriptor, size: 13.0)
+        let attributedMessage = NSMutableAttributedString.init(string: msg0)
+        attributedMessage.addAttributes([NSAttributedString.Key.font:messageFont,
+                                         NSAttributedString.Key.foregroundColor:UIColor.red],
+                                        range:NSMakeRange(0, (msg0.count)))
+        
+        UIAlertController().ba_actionSheet(self, title: nil, attributedTitle: attributedTitle, message: nil, attributedMessage: attributedMessage, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: buttonTitleColorArray) { (index, alertController) in
             print("点我干嘛？index：", index)
         }
     }
     
     func ba_alert3() -> Void {
-        UIAlertController().ba_alertController(self, title: title0, message: msg0, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: [], buttonDisabledWithTitleArray: ["确定"], textFieldPlaceholderArray: ["请输入账号", "请输入密码"], textFieldConfigurationActionBlock: { (textField, index) in
+        UIAlertController().ba_alertController(self, title: title0, attributedTitle:nil, message: msg0, attributedMessage:nil, buttonTitleArray: buttonTitleArray, buttonTitleColorArray: [], buttonDisabledWithTitleArray: ["确定"], textFieldPlaceholderArray: ["请输入账号", "请输入密码"], textFieldConfigurationActionBlock: { (textField, index) in
             
             if index == 0
             {
@@ -210,7 +277,7 @@ extension UIViewController {
             }
             
             NotificationCenter.default.addObserver(self, selector: #selector(self.handleAlertTextFieldDidChangeAction(_ :)), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
-
+            
         }) { (index, alertController) in
             
         }
@@ -231,24 +298,30 @@ extension UIViewController {
 ```
 
 ## 5、更新记录：【倒叙】
- 欢迎使用 [【BAHome】](https://github.com/BAHome) 系列开源代码 ！
+ 欢迎使用 [【BAHome】](https://github.com/BAHome) 系列开源代码 ！ <br>
  如有更多需求，请前往：[【BAHome】](https://github.com/BAHome)
- 
+
  项目源码地址：
- OC 版 ：https://github.com/BAHome/BAAlertController
- Swift 版 ：https://github.com/BAHome/BAAlertController-Swift
- 
- 
- 最新更新时间：2018-01-06 【倒叙】
- 最新Version：【Version：1.0.0】
- 更新内容：
- 1.0.0.1、普通的 UIAlertController-alert，可以自由设置按钮数量、按钮颜色
- 1.0.0.2、普通的 UIAlertController-alert，可以自由设置按钮数量、按钮颜色【多按钮样式，颜色数组和title数组个数不等】
- 1.0.0.3、普通的 带 textField 的 UIAlertController-alert，可添加一个或者多个 textField
- 1.0.0.4、普通的 UIAlertController-actionSheet，可以自由设置按钮数量、按钮颜色
- 1.0.0.5、完美适配 iPhone 和 iPad 版本
- 1.0.0.6、理论完全兼容现有 iOS 8 以上系统版本
- 
+ OC 版 ：https://github.com/BAHome/BAAlertController <br>
+ Swift 版 ：https://github.com/BAHome/BAAlertController-Swift <br>
+
+ 最新更新时间：2018-11-06 【倒叙】 <br>
+ 最新Version：【Version：1.0.1】 <br>
+ 更新内容： <br>
+ 1.0.1.1、UIAlertController-alert/actionSheet，可以自由设置按钮颜色、attributedTitle、attributedMessage <br>
+ 1.0.1.2、全新 pod 改版，支持 pod 1.0.1 版本, pod 后，需导入头文件：BAAlertController_Swift <br>
+ 1.0.1.3、部分代码优化，全面适配 swift 4.2 <br>
+
+ 最新更新时间：2018-01-06 【倒叙】 <br>
+ 最新Version：【Version：1.0.0】 <br>
+ 更新内容： <br>
+ 1.0.0.1、普通的 UIAlertController-alert，可以自由设置按钮数量、按钮颜色 <br>
+ 1.0.0.2、普通的 UIAlertController-alert，可以自由设置按钮数量、按钮颜色【多按钮样式，颜色数组和title数组个数不等】 <br>
+ 1.0.0.3、普通的 带 textField 的 UIAlertController-alert，可添加一个或者多个 textField <br>
+ 1.0.0.4、普通的 UIAlertController-actionSheet，可以自由设置按钮数量、按钮颜色 <br>
+ 1.0.0.5、完美适配 iPhone 和 iPad 版本 <br>
+ 1.0.0.6、理论完全兼容现有 iOS 8 以上系统版本 <br>
+
 
 ## 6、bug 反馈
 > 1、开发中遇到 bug，希望小伙伴儿们能够及时反馈与我们 BAHome 团队，我们必定会认真对待每一个问题！ <br>
