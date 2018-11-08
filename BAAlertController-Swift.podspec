@@ -8,17 +8,17 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BAAlertController-Swift'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'swift 版本 UIAlertController 的分类，一个 block 搞定系统 alert 和 actionSheet 的 iPhone 和 iPad 版本适配！'
 
   s.description      = <<-DESC
                         this is BAAlertController-Swift
                        DESC
 
-  s.homepage         = 'https://github.com/boai/BAAlertController-Swift'
+  s.homepage         = 'https://github.com/BAHome/BAAlertController-Swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'boai' => 'sunboyan@outlook.com' }
-  s.source           = { :git => 'https://github.com/boai/BAAlertController-Swift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/BAHome/BAAlertController-Swift.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
 
     # Tools
     s.subspec 'BAAlertController-Swift' do |sBAAlertController|
-        sBAAlertController.dependency "BAButton"
+        # sBAAlertController.dependency "BAButton"
         
         sBAAlertController.source_files  = "BAAlertController-Swift/Classes/**/*.{h,m,swift}"
         
@@ -50,13 +50,13 @@ Pod::Spec.new do |s|
     end
     
 # Tools
-  s.subspec 'Tools' do |stool|
-    stool.dependency "BATextField"
+  # s.subspec 'Tools' do |stool|
+    # stool.dependency "BATextField"
     
-    stool.source_files  = "BAAlertController-Swift/Tools/**/*.{h,m,swift}"
+    # stool.source_files  = "BAAlertController-Swift/Tools/**/*.{h,m,swift}"
 
     #stool.ios.vendored_frameworks = "iflyMSC.framework"
     #stool.libraries = "z", "c++", "icucore"
-  end
+  # end
   
 end
