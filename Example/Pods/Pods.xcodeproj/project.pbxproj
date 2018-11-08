@@ -1,0 +1,1217 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B65EAC6D72C5EFAE8594AE75C4EF9D2 /* BAPGYResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3002868AB8C57213F27945A0B4F1AE /* BAPGYResponseModel.m */; };
+		1B609C71F94EB7D1142A0AA6CFC432B5 /* UITextField+BAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5374190169A23BEC932420D12B69732E /* UITextField+BAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E6200D9EABCBF4EA24F02E62D23B71F /* BAKit_ConfigurationDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF146A3E53E64AD1D2134EBAF6864CE /* BAKit_ConfigurationDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2041F8AA311571FDB0438C7B20B27DDF /* BAAlertController-Swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEAE1B528F20DF649C21B4A75FA6B3 /* BAAlertController-Swift.bundle */; };
+		2161845E9FD07BDCA2BD14F545B100A7 /* UITextField+BAHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA30C169042B945A2833CEB51D7077F /* UITextField+BAHistory.m */; };
+		229E8976C3E453A073BE9038A745B527 /* UIButton+BAKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F921A3C5BCAF17B0638A167338129AA /* UIButton+BAKit.m */; };
+		286492DB6606D43881952E4199598D74 /* BATextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA1ECAC3C1A35974A005035BFD9A151 /* BATextField-dummy.m */; };
+		2E17693991F9FB7A1205C2F970CC542F /* UIView+BARectCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = 39AC402D080DE757FCF9316D1120255A /* UIView+BARectCorner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FF66143AEFA9404EB181F1DEC6B19FF /* BAButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6250996FCC9F41A220BC6D4346261D7A /* BAButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33DA0AA906406F7D7F7C110F4941E794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D244BBBE33305B416C2D007D502056A2 /* Foundation.framework */; };
+		39F55A1F7396874798241C42445E5C38 /* UIButton+BACountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = A85D2073DE1239879FDF4905EDB161CC /* UIButton+BACountDown.m */; };
+		3CA38EB25E38A402BF0D99CA69653191 /* BAButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72623CE56B51C649E6E275EC4BD6C3F8 /* BAButton-dummy.m */; };
+		422B0A785B2810BD3C62D22B8D8EDCEB /* UIButton+BACountDown.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4322C98E8F3511CFC4680B49E9563E /* UIButton+BACountDown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		422F5A3A6BC1560DC5E643182B535A52 /* BAButton_Version.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A07CDC91100AB74278B4D434AF854FE /* BAButton_Version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		456C8518EB8E177AE8D9B2E79101AF1F /* BAButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A029C9FC00186C7053A4DB388A195C28 /* BAButton.framework */; };
+		4BE5107B495F1B9DB7AAB9BE2EFA88FB /* BAKit_UserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 742CB2E596A6E9838447AA5E6BFAE22C /* BAKit_UserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53F846963117E946B18E64C941E5BF54 /* BAKit_ConfigurationDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 620372013015C2652DED689121287CB9 /* BAKit_ConfigurationDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A6241C569855EA026F60BF2029FFD2E /* BAAlertController-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E96416F8E617D5B8AE71A89E43D16F48 /* BAAlertController-Swift-dummy.m */; };
+		6824A029B2A28EFF9BE51AAAB5E2D209 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D244BBBE33305B416C2D007D502056A2 /* Foundation.framework */; };
+		6BFA50DBC8B7A88231BD125AB63944DD /* BAKit_UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E510CE915DFFB2055C0FA7F0139F9F /* BAKit_UserDefaults.m */; };
+		760E3D1E397667F1DF1954BF7D2CC02A /* UIView+BAFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E7DB92B9D685AFC0FD1AECE0C6DDF4 /* UIView+BAFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5ED8A9CD8BD52431C34AE3F021B1A1 /* Pods-BAAlertController-Swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E52B205A23B4ED83FAE48A97B8E072 /* Pods-BAAlertController-Swift_Example-dummy.m */; };
+		7D13246EC304EDBFD62F678D58A9F917 /* BATextField_Version.h in Headers */ = {isa = PBXBuildFile; fileRef = E19E505D39481B6254F92B561A7645FD /* BATextField_Version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8093ADA282D4191D1E9201951B9E1F4A /* UITextField+BAHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9515B7A1B795FC0680F3758742EAB78E /* UITextField+BAHistory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82491E6BB1C4EC1697648C77D36EB73F /* UITextField+BAKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EBEFE401C62B1EAC9312DE3DB85E4C /* UITextField+BAKit.m */; };
+		8297E4BE271028FA145131A706F03365 /* UIButton+BAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C2D7E4D0ABEA1E7DD409E096DCB86D /* UIButton+BAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83A220BA4830BF7949EBF2106DCA6026 /* BATextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FFE2E8C25661726ACA22BFB4E065377 /* BATextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87D47CE4324785D00FDC45AE39DBC33C /* BAAlertController-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E8048DD1ECBF020A45A97E798EEAF5 /* BAAlertController-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DDA288C96613C7D3FD239312B1E7E43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4648FA70CFA542BC8A59A7B8F895C8D2 /* Assets.xcassets */; };
+		8F9739EF63AE0DBADFB0259E2DA8781E /* UIAlertController+BAKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D639B3C20B58E0FD4447F9DCF64A8 /* UIAlertController+BAKit.swift */; };
+		928F4150C228AF8009BB0BF72EDB9410 /* BAButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DF8449494E64996159A7831813C6E5B /* BAButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C977B77646F672F52640A1624AC2372 /* UIView+BARectCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCB816CCD92022F6220E740AF0687E /* UIView+BARectCorner.m */; };
+		A7785F9F175FFB245D94C301ECED3474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D244BBBE33305B416C2D007D502056A2 /* Foundation.framework */; };
+		AA7EA5D4AB75B16752BBE0971A64DB07 /* BAAlertController_Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B4C953F4305C0AB214A960BF032F0 /* BAAlertController_Version.swift */; };
+		AD6713FC284705355409EABDA9680C64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D244BBBE33305B416C2D007D502056A2 /* Foundation.framework */; };
+		B4DAE188132D6AC00F2DA83938E1500B /* UIButton+BAState.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E38D73C9196E6111C04FC56BC82D24 /* UIButton+BAState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0B15CCDE9F2F75F0C0832470CCAE725 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825BF5EAFE3F9310774BAF394F377EFE /* UIKit.framework */; };
+		C5D5808171E7E2D6AD01A50BDDF29326 /* Pods-BAAlertController-Swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 531D25648EFDAD030E4B1CA852141855 /* Pods-BAAlertController-Swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1887FACB55A87006360585D70629EBC /* UIButton+BAState.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BB6FF8A53A788C320E2DB7B78E5B55 /* UIButton+BAState.m */; };
+		D6F2A71F332B0503C72A9517A85ECA6A /* UIView+BAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0856C1E8A6E689F00C662F9B561BC49E /* UIView+BAFrame.m */; };
+		F7163ABF979805F8CEDDAE32EEA76E1E /* BATextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DCA0ED1AD7332CF3FA8841FAFFD02DA /* BATextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD97BC5C5CC0562232198E763F4DCA97 /* BAPGYResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C068EEBF61551039994813C5B8198776 /* BAPGYResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDFD666963B7AE02E4A5F1920A283E78 /* BATextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCEA73FFAE4B81A0913FEA51D3FD322 /* BATextField.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FA2601E836F5420CC9F8A809627D6F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375C4BE97069F7D765E16119998A3650;
+			remoteInfo = BAButton;
+		};
+		1A814B741A971BBD55FD98662841B0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6D1D49D9D661575CEEBD0970BCE530;
+			remoteInfo = "BAAlertController-Swift-BAAlertController-Swift";
+		};
+		22DFEE285249DC7A72450170B51A5AEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B5C920A69FC0394477C36D1368A66BF;
+			remoteInfo = "BAAlertController-Swift";
+		};
+		48BDDFCD60B3812E1AAA32A5AECE87C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF221EB97CF03C20350CDCB68F833E8;
+			remoteInfo = BATextField;
+		};
+		CBE1C583B1DF3AC0DA8011D84303125D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF221EB97CF03C20350CDCB68F833E8;
+			remoteInfo = BATextField;
+		};
+		EEEE7C63B417E3C672EC619D1946DBAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375C4BE97069F7D765E16119998A3650;
+			remoteInfo = BAButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0467B1F2E25697E546EAB1DE4A73F10F /* Pods-BAAlertController-Swift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BAAlertController-Swift_Example-Info.plist"; sourceTree = "<group>"; };
+		0856C1E8A6E689F00C662F9B561BC49E /* UIView+BAFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+BAFrame.m"; path = "BATextField/BATextField/UIView+BAFrame.m"; sourceTree = "<group>"; };
+		0BCEA73FFAE4B81A0913FEA51D3FD322 /* BATextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BATextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA1ECAC3C1A35974A005035BFD9A151 /* BATextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BATextField-dummy.m"; sourceTree = "<group>"; };
+		11E510CE915DFFB2055C0FA7F0139F9F /* BAKit_UserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAKit_UserDefaults.m; path = BATextField/BATextField/BAKit_UserDefaults.m; sourceTree = "<group>"; };
+		1D3002868AB8C57213F27945A0B4F1AE /* BAPGYResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAPGYResponseModel.m; path = "BAAlertController-Swift/Tools/BAPGYResponseModel.m"; sourceTree = "<group>"; };
+		1D7C4D1758BDCFEAD7E2ED036CF3B15B /* BAButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BAButton-Info.plist"; sourceTree = "<group>"; };
+		1FFE2E8C25661726ACA22BFB4E065377 /* BATextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BATextField-umbrella.h"; sourceTree = "<group>"; };
+		2A07CDC91100AB74278B4D434AF854FE /* BAButton_Version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAButton_Version.h; path = BAButton/BAButton/BAButton_Version.h; sourceTree = "<group>"; };
+		2A45FE857023262ADCE62A158E8724CE /* BATextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BATextField-Info.plist"; sourceTree = "<group>"; };
+		2ABCB816CCD92022F6220E740AF0687E /* UIView+BARectCorner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+BARectCorner.m"; path = "BAButton/BAButton/UIView+BARectCorner.m"; sourceTree = "<group>"; };
+		2C3384A67613D77761680A106BAB7826 /* BAButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BAButton.framework; path = BAButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DF8449494E64996159A7831813C6E5B /* BAButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAButton-umbrella.h"; sourceTree = "<group>"; };
+		3279E84328FB6D15D03EBE019A8BA96C /* BAAlertController-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAAlertController-Swift-prefix.pch"; sourceTree = "<group>"; };
+		33BB6FF8A53A788C320E2DB7B78E5B55 /* UIButton+BAState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BAState.m"; path = "BAButton/BAButton/UIButton+BAState.m"; sourceTree = "<group>"; };
+		39AC402D080DE757FCF9316D1120255A /* UIView+BARectCorner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+BARectCorner.h"; path = "BAButton/BAButton/UIView+BARectCorner.h"; sourceTree = "<group>"; };
+		3EEDF4A8276EB31B7E18074DF9E61393 /* BAAlertController-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BAAlertController-Swift-Info.plist"; sourceTree = "<group>"; };
+		3FFEAE1B528F20DF649C21B4A75FA6B3 /* BAAlertController-Swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "BAAlertController-Swift.bundle"; path = "BAAlertController-Swift-BAAlertController-Swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E38D73C9196E6111C04FC56BC82D24 /* UIButton+BAState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+BAState.h"; path = "BAButton/BAButton/UIButton+BAState.h"; sourceTree = "<group>"; };
+		4648FA70CFA542BC8A59A7B8F895C8D2 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "BAAlertController-Swift/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		47EDDC610710937EBA8A64665FE77B5B /* BAAlertController_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BAAlertController_Swift.framework; path = "BAAlertController-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F921A3C5BCAF17B0638A167338129AA /* UIButton+BAKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BAKit.m"; path = "BAButton/BAButton/UIButton+BAKit.m"; sourceTree = "<group>"; };
+		523C3C60D5ACD0101A474A3AFBDCF0CA /* BATextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BATextField.xcconfig; sourceTree = "<group>"; };
+		531D25648EFDAD030E4B1CA852141855 /* Pods-BAAlertController-Swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BAAlertController-Swift_Example-umbrella.h"; sourceTree = "<group>"; };
+		5374190169A23BEC932420D12B69732E /* UITextField+BAKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+BAKit.h"; path = "BATextField/BATextField/UITextField+BAKit.h"; sourceTree = "<group>"; };
+		56E52B205A23B4ED83FAE48A97B8E072 /* Pods-BAAlertController-Swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BAAlertController-Swift_Example-dummy.m"; sourceTree = "<group>"; };
+		58D41A5B5C2155CCC202A64E388BF641 /* BAButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BAButton.xcconfig; sourceTree = "<group>"; };
+		5F3E025AB42FF5A451D7E4493150353C /* Pods-BAAlertController-Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BAAlertController-Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		61F9626AC345F591B25D42C02A83237C /* Pods-BAAlertController-Swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BAAlertController-Swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		620372013015C2652DED689121287CB9 /* BAKit_ConfigurationDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAKit_ConfigurationDefine.h; path = BAButton/BAButton/BAKit_ConfigurationDefine.h; sourceTree = "<group>"; };
+		6250996FCC9F41A220BC6D4346261D7A /* BAButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAButton.h; path = BAButton/BAButton/BAButton.h; sourceTree = "<group>"; };
+		699A72ABD71E5376A17A537B7BE39014 /* BAAlertController-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "BAAlertController-Swift.modulemap"; sourceTree = "<group>"; };
+		6B2AE8248A7150B0CC81D05FD49DB6D7 /* BAAlertController-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BAAlertController-Swift.xcconfig"; sourceTree = "<group>"; };
+		7030A2A6DBF6E9E60DC09BC04E9671EF /* Pods-BAAlertController-Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BAAlertController-Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		72623CE56B51C649E6E275EC4BD6C3F8 /* BAButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAButton-dummy.m"; sourceTree = "<group>"; };
+		742CB2E596A6E9838447AA5E6BFAE22C /* BAKit_UserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAKit_UserDefaults.h; path = BATextField/BATextField/BAKit_UserDefaults.h; sourceTree = "<group>"; };
+		768A083AFE84E15164DE464B40C6D1A8 /* BATextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BATextField.framework; path = BATextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E35CDC56A89659A60EB8D2F927DC1E /* ResourceBundle-BAAlertController-Swift-BAAlertController-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BAAlertController-Swift-BAAlertController-Swift-Info.plist"; sourceTree = "<group>"; };
+		7DCA0ED1AD7332CF3FA8841FAFFD02DA /* BATextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BATextField.h; path = BATextField/BATextField/BATextField.h; sourceTree = "<group>"; };
+		825BF5EAFE3F9310774BAF394F377EFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		87D1C54051196459831318030EC17EF7 /* BATextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BATextField-prefix.pch"; sourceTree = "<group>"; };
+		8B6B4C953F4305C0AB214A960BF032F0 /* BAAlertController_Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BAAlertController_Version.swift; path = "BAAlertController-Swift/Classes/BAAlertController_Version.swift"; sourceTree = "<group>"; };
+		8D8E9416E7C145FE55354D3E67A79E48 /* Pods-BAAlertController-Swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BAAlertController-Swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		90E8048DD1ECBF020A45A97E798EEAF5 /* BAAlertController-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAAlertController-Swift-umbrella.h"; sourceTree = "<group>"; };
+		9515B7A1B795FC0680F3758742EAB78E /* UITextField+BAHistory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+BAHistory.h"; path = "BATextField/BATextField/UITextField+BAHistory.h"; sourceTree = "<group>"; };
+		9E4322C98E8F3511CFC4680B49E9563E /* UIButton+BACountDown.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+BACountDown.h"; path = "BAButton/BAButton/UIButton+BACountDown.h"; sourceTree = "<group>"; };
+		A029C9FC00186C7053A4DB388A195C28 /* BAButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BAButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A83D639B3C20B58E0FD4447F9DCF64A8 /* UIAlertController+BAKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+BAKit.swift"; path = "BAAlertController-Swift/Classes/UIAlertController+BAKit.swift"; sourceTree = "<group>"; };
+		A85D2073DE1239879FDF4905EDB161CC /* UIButton+BACountDown.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BACountDown.m"; path = "BAButton/BAButton/UIButton+BACountDown.m"; sourceTree = "<group>"; };
+		A9C2D7E4D0ABEA1E7DD409E096DCB86D /* UIButton+BAKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+BAKit.h"; path = "BAButton/BAButton/UIButton+BAKit.h"; sourceTree = "<group>"; };
+		B2BB4F0F8B4BFAF29A4141217635A7FC /* BAAlertController-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "BAAlertController-Swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B2E7DB92B9D685AFC0FD1AECE0C6DDF4 /* UIView+BAFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+BAFrame.h"; path = "BATextField/BATextField/UIView+BAFrame.h"; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C068EEBF61551039994813C5B8198776 /* BAPGYResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAPGYResponseModel.h; path = "BAAlertController-Swift/Tools/BAPGYResponseModel.h"; sourceTree = "<group>"; };
+		C09147EE2ECE70183CE7E5BA74705797 /* Pods-BAAlertController-Swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BAAlertController-Swift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C159ADEB5EE6A33A196F8DD03A4B7A66 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C3D85079E47AE5404979452885063EC5 /* Pods_BAAlertController_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BAAlertController_Swift_Example.framework; path = "Pods-BAAlertController-Swift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8637EB11DF4B0DB1AAFFB464613B17D /* BAButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAButton-prefix.pch"; sourceTree = "<group>"; };
+		CBA30C169042B945A2833CEB51D7077F /* UITextField+BAHistory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+BAHistory.m"; path = "BATextField/BATextField/UITextField+BAHistory.m"; sourceTree = "<group>"; };
+		D244BBBE33305B416C2D007D502056A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DABA56959F94FE7DE1718A02F06FEFD2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DF2D6B401BA29308DBBC7795A72F1E14 /* Pods-BAAlertController-Swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BAAlertController-Swift_Example.modulemap"; sourceTree = "<group>"; };
+		E19E505D39481B6254F92B561A7645FD /* BATextField_Version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BATextField_Version.h; path = BATextField/BATextField/BATextField_Version.h; sourceTree = "<group>"; };
+		E96416F8E617D5B8AE71A89E43D16F48 /* BAAlertController-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAAlertController-Swift-dummy.m"; sourceTree = "<group>"; };
+		F4533978273E60DD1A4E31664BBA6196 /* BAButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BAButton.modulemap; sourceTree = "<group>"; };
+		F7EBEFE401C62B1EAC9312DE3DB85E4C /* UITextField+BAKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+BAKit.m"; path = "BATextField/BATextField/UITextField+BAKit.m"; sourceTree = "<group>"; };
+		FB4BB2372F10BEA8696C1FEEF1457F27 /* BATextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BATextField.modulemap; sourceTree = "<group>"; };
+		FEF146A3E53E64AD1D2134EBAF6864CE /* BAKit_ConfigurationDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAKit_ConfigurationDefine.h; path = BATextField/BATextField/BAKit_ConfigurationDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		270A926510ABE2C26B5592AB28FDF219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456C8518EB8E177AE8D9B2E79101AF1F /* BAButton.framework in Frameworks */,
+				FDFD666963B7AE02E4A5F1920A283E78 /* BATextField.framework in Frameworks */,
+				A7785F9F175FFB245D94C301ECED3474 /* Foundation.framework in Frameworks */,
+				C0B15CCDE9F2F75F0C0832470CCAE725 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3884A4753A84B8D672A7DB9BF93285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EAA94747F9FE6183E40F5A5386507DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DA0AA906406F7D7F7C110F4941E794 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A459B1BFEBCA1DA11CF85219DC7A1008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6713FC284705355409EABDA9680C64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C5577F105D8F47F9C2CBF18CE50873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6824A029B2A28EFF9BE51AAAB5E2D209 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A726C777F636124A6FA9848E8FEAD2 /* BAButton */ = {
+			isa = PBXGroup;
+			children = (
+				6250996FCC9F41A220BC6D4346261D7A /* BAButton.h */,
+				2A07CDC91100AB74278B4D434AF854FE /* BAButton_Version.h */,
+				620372013015C2652DED689121287CB9 /* BAKit_ConfigurationDefine.h */,
+				9E4322C98E8F3511CFC4680B49E9563E /* UIButton+BACountDown.h */,
+				A85D2073DE1239879FDF4905EDB161CC /* UIButton+BACountDown.m */,
+				A9C2D7E4D0ABEA1E7DD409E096DCB86D /* UIButton+BAKit.h */,
+				4F921A3C5BCAF17B0638A167338129AA /* UIButton+BAKit.m */,
+				45E38D73C9196E6111C04FC56BC82D24 /* UIButton+BAState.h */,
+				33BB6FF8A53A788C320E2DB7B78E5B55 /* UIButton+BAState.m */,
+				39AC402D080DE757FCF9316D1120255A /* UIView+BARectCorner.h */,
+				2ABCB816CCD92022F6220E740AF0687E /* UIView+BARectCorner.m */,
+				A72A6AF3C59446DCFF656B80D53FB04F /* Support Files */,
+			);
+			name = BAButton;
+			path = BAButton;
+			sourceTree = "<group>";
+		};
+		28BDC2950C868038DD2BC7F601E6EE62 /* Pods-BAAlertController-Swift_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DF2D6B401BA29308DBBC7795A72F1E14 /* Pods-BAAlertController-Swift_Example.modulemap */,
+				61F9626AC345F591B25D42C02A83237C /* Pods-BAAlertController-Swift_Example-acknowledgements.markdown */,
+				8D8E9416E7C145FE55354D3E67A79E48 /* Pods-BAAlertController-Swift_Example-acknowledgements.plist */,
+				56E52B205A23B4ED83FAE48A97B8E072 /* Pods-BAAlertController-Swift_Example-dummy.m */,
+				C09147EE2ECE70183CE7E5BA74705797 /* Pods-BAAlertController-Swift_Example-frameworks.sh */,
+				0467B1F2E25697E546EAB1DE4A73F10F /* Pods-BAAlertController-Swift_Example-Info.plist */,
+				531D25648EFDAD030E4B1CA852141855 /* Pods-BAAlertController-Swift_Example-umbrella.h */,
+				7030A2A6DBF6E9E60DC09BC04E9671EF /* Pods-BAAlertController-Swift_Example.debug.xcconfig */,
+				5F3E025AB42FF5A451D7E4493150353C /* Pods-BAAlertController-Swift_Example.release.xcconfig */,
+			);
+			name = "Pods-BAAlertController-Swift_Example";
+			path = "Target Support Files/Pods-BAAlertController-Swift_Example";
+			sourceTree = "<group>";
+		};
+		29FFC3903BC66831AB4840C93E60B502 /* BAAlertController-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				E3C4DEDAF218F3FA3253133FFE1C8F93 /* BAAlertController-Swift */,
+				C7486674BD1D857E04107CA2BC7C9E19 /* Pod */,
+				9176B3DB2A12D99B7B8CA8367F747B78 /* Resources */,
+				65F18D9ADAD945F4A71003062485C883 /* Support Files */,
+				5CE7863D56E8F7F3E41408B37F693DA6 /* Tools */,
+			);
+			name = "BAAlertController-Swift";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4E9A8C03C015D6F1978201B9FDF9C078 /* BATextField */ = {
+			isa = PBXGroup;
+			children = (
+				FEF146A3E53E64AD1D2134EBAF6864CE /* BAKit_ConfigurationDefine.h */,
+				742CB2E596A6E9838447AA5E6BFAE22C /* BAKit_UserDefaults.h */,
+				11E510CE915DFFB2055C0FA7F0139F9F /* BAKit_UserDefaults.m */,
+				7DCA0ED1AD7332CF3FA8841FAFFD02DA /* BATextField.h */,
+				E19E505D39481B6254F92B561A7645FD /* BATextField_Version.h */,
+				9515B7A1B795FC0680F3758742EAB78E /* UITextField+BAHistory.h */,
+				CBA30C169042B945A2833CEB51D7077F /* UITextField+BAHistory.m */,
+				5374190169A23BEC932420D12B69732E /* UITextField+BAKit.h */,
+				F7EBEFE401C62B1EAC9312DE3DB85E4C /* UITextField+BAKit.m */,
+				B2E7DB92B9D685AFC0FD1AECE0C6DDF4 /* UIView+BAFrame.h */,
+				0856C1E8A6E689F00C662F9B561BC49E /* UIView+BAFrame.m */,
+				5827F54A3D63070D056C1860DFDA9090 /* Support Files */,
+			);
+			name = BATextField;
+			path = BATextField;
+			sourceTree = "<group>";
+		};
+		54B6E9169EB2C770646C9F6E365E9832 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12A726C777F636124A6FA9848E8FEAD2 /* BAButton */,
+				4E9A8C03C015D6F1978201B9FDF9C078 /* BATextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5827F54A3D63070D056C1860DFDA9090 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB4BB2372F10BEA8696C1FEEF1457F27 /* BATextField.modulemap */,
+				523C3C60D5ACD0101A474A3AFBDCF0CA /* BATextField.xcconfig */,
+				0DA1ECAC3C1A35974A005035BFD9A151 /* BATextField-dummy.m */,
+				2A45FE857023262ADCE62A158E8724CE /* BATextField-Info.plist */,
+				87D1C54051196459831318030EC17EF7 /* BATextField-prefix.pch */,
+				1FFE2E8C25661726ACA22BFB4E065377 /* BATextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BATextField";
+			sourceTree = "<group>";
+		};
+		5CE7863D56E8F7F3E41408B37F693DA6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C068EEBF61551039994813C5B8198776 /* BAPGYResponseModel.h */,
+				1D3002868AB8C57213F27945A0B4F1AE /* BAPGYResponseModel.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		65F18D9ADAD945F4A71003062485C883 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				699A72ABD71E5376A17A537B7BE39014 /* BAAlertController-Swift.modulemap */,
+				6B2AE8248A7150B0CC81D05FD49DB6D7 /* BAAlertController-Swift.xcconfig */,
+				E96416F8E617D5B8AE71A89E43D16F48 /* BAAlertController-Swift-dummy.m */,
+				3EEDF4A8276EB31B7E18074DF9E61393 /* BAAlertController-Swift-Info.plist */,
+				3279E84328FB6D15D03EBE019A8BA96C /* BAAlertController-Swift-prefix.pch */,
+				90E8048DD1ECBF020A45A97E798EEAF5 /* BAAlertController-Swift-umbrella.h */,
+				78E35CDC56A89659A60EB8D2F927DC1E /* ResourceBundle-BAAlertController-Swift-BAAlertController-Swift-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BAAlertController-Swift";
+			sourceTree = "<group>";
+		};
+		6D31D72B33155D49B39A68FAAF721015 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D244BBBE33305B416C2D007D502056A2 /* Foundation.framework */,
+				825BF5EAFE3F9310774BAF394F377EFE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		71D08ADC5025BB7D68B25B24C571E58F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29FFC3903BC66831AB4840C93E60B502 /* BAAlertController-Swift */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				71D08ADC5025BB7D68B25B24C571E58F /* Development Pods */,
+				AEBBDC7BF87309170E0FACCA572A825E /* Frameworks */,
+				54B6E9169EB2C770646C9F6E365E9832 /* Pods */,
+				EECAD619249EAECC182835FD401921E4 /* Products */,
+				B2245D4C59F7CA588FC3E6930FC50EAC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9176B3DB2A12D99B7B8CA8367F747B78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4648FA70CFA542BC8A59A7B8F895C8D2 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A72A6AF3C59446DCFF656B80D53FB04F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4533978273E60DD1A4E31664BBA6196 /* BAButton.modulemap */,
+				58D41A5B5C2155CCC202A64E388BF641 /* BAButton.xcconfig */,
+				72623CE56B51C649E6E275EC4BD6C3F8 /* BAButton-dummy.m */,
+				1D7C4D1758BDCFEAD7E2ED036CF3B15B /* BAButton-Info.plist */,
+				C8637EB11DF4B0DB1AAFFB464613B17D /* BAButton-prefix.pch */,
+				2DF8449494E64996159A7831813C6E5B /* BAButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BAButton";
+			sourceTree = "<group>";
+		};
+		AEBBDC7BF87309170E0FACCA572A825E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A029C9FC00186C7053A4DB388A195C28 /* BAButton.framework */,
+				0BCEA73FFAE4B81A0913FEA51D3FD322 /* BATextField.framework */,
+				6D31D72B33155D49B39A68FAAF721015 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2245D4C59F7CA588FC3E6930FC50EAC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28BDC2950C868038DD2BC7F601E6EE62 /* Pods-BAAlertController-Swift_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C7486674BD1D857E04107CA2BC7C9E19 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B2BB4F0F8B4BFAF29A4141217635A7FC /* BAAlertController-Swift.podspec */,
+				DABA56959F94FE7DE1718A02F06FEFD2 /* LICENSE */,
+				C159ADEB5EE6A33A196F8DD03A4B7A66 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E3C4DEDAF218F3FA3253133FFE1C8F93 /* BAAlertController-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8B6B4C953F4305C0AB214A960BF032F0 /* BAAlertController_Version.swift */,
+				A83D639B3C20B58E0FD4447F9DCF64A8 /* UIAlertController+BAKit.swift */,
+			);
+			name = "BAAlertController-Swift";
+			sourceTree = "<group>";
+		};
+		EECAD619249EAECC182835FD401921E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FFEAE1B528F20DF649C21B4A75FA6B3 /* BAAlertController-Swift.bundle */,
+				47EDDC610710937EBA8A64665FE77B5B /* BAAlertController_Swift.framework */,
+				2C3384A67613D77761680A106BAB7826 /* BAButton.framework */,
+				768A083AFE84E15164DE464B40C6D1A8 /* BATextField.framework */,
+				C3D85079E47AE5404979452885063EC5 /* Pods_BAAlertController_Swift_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DD845D30427418C9410692EE4FC806B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E6200D9EABCBF4EA24F02E62D23B71F /* BAKit_ConfigurationDefine.h in Headers */,
+				4BE5107B495F1B9DB7AAB9BE2EFA88FB /* BAKit_UserDefaults.h in Headers */,
+				83A220BA4830BF7949EBF2106DCA6026 /* BATextField-umbrella.h in Headers */,
+				F7163ABF979805F8CEDDAE32EEA76E1E /* BATextField.h in Headers */,
+				7D13246EC304EDBFD62F678D58A9F917 /* BATextField_Version.h in Headers */,
+				8093ADA282D4191D1E9201951B9E1F4A /* UITextField+BAHistory.h in Headers */,
+				1B609C71F94EB7D1142A0AA6CFC432B5 /* UITextField+BAKit.h in Headers */,
+				760E3D1E397667F1DF1954BF7D2CC02A /* UIView+BAFrame.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D6D1B398E24A9A024FD301687F886FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928F4150C228AF8009BB0BF72EDB9410 /* BAButton-umbrella.h in Headers */,
+				2FF66143AEFA9404EB181F1DEC6B19FF /* BAButton.h in Headers */,
+				422F5A3A6BC1560DC5E643182B535A52 /* BAButton_Version.h in Headers */,
+				53F846963117E946B18E64C941E5BF54 /* BAKit_ConfigurationDefine.h in Headers */,
+				422B0A785B2810BD3C62D22B8D8EDCEB /* UIButton+BACountDown.h in Headers */,
+				8297E4BE271028FA145131A706F03365 /* UIButton+BAKit.h in Headers */,
+				B4DAE188132D6AC00F2DA83938E1500B /* UIButton+BAState.h in Headers */,
+				2E17693991F9FB7A1205C2F970CC542F /* UIView+BARectCorner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618AEEF0DFDA39F23652CA38BD83DE8B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D5808171E7E2D6AD01A50BDDF29326 /* Pods-BAAlertController-Swift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97ADA59CCBB01681876097EDDF83787E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D47CE4324785D00FDC45AE39DBC33C /* BAAlertController-Swift-umbrella.h in Headers */,
+				FD97BC5C5CC0562232198E763F4DCA97 /* BAPGYResponseModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		375C4BE97069F7D765E16119998A3650 /* BAButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC8CD8A3EEEFC5A0C85665990D6B2C61 /* Build configuration list for PBXNativeTarget "BAButton" */;
+			buildPhases = (
+				2D6D1B398E24A9A024FD301687F886FB /* Headers */,
+				F619CD46C35185CB8E6C50618FC7B6AA /* Sources */,
+				A459B1BFEBCA1DA11CF85219DC7A1008 /* Frameworks */,
+				67B6ADB8C3AC9BDBB4986E8E433801BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BAButton;
+			productName = BAButton;
+			productReference = 2C3384A67613D77761680A106BAB7826 /* BAButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DF221EB97CF03C20350CDCB68F833E8 /* BATextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B8AB4BA53794AD478F015445754B812 /* Build configuration list for PBXNativeTarget "BATextField" */;
+			buildPhases = (
+				0DD845D30427418C9410692EE4FC806B /* Headers */,
+				6CCAF89F3F1DFC5FC2236F7A5C90FD86 /* Sources */,
+				4EAA94747F9FE6183E40F5A5386507DA /* Frameworks */,
+				82BE4BA88A51058300E4E67A95231116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BATextField;
+			productName = BATextField;
+			productReference = 768A083AFE84E15164DE464B40C6D1A8 /* BATextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B5C920A69FC0394477C36D1368A66BF /* BAAlertController-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E217B18E425D25C3C0A1818A09CBA6 /* Build configuration list for PBXNativeTarget "BAAlertController-Swift" */;
+			buildPhases = (
+				97ADA59CCBB01681876097EDDF83787E /* Headers */,
+				B4A1D44A42AFD88496992C4C321830CA /* Sources */,
+				270A926510ABE2C26B5592AB28FDF219 /* Frameworks */,
+				539C3F95A9143F204A9C70AD9FC232B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8F344E50888D625EF27FDCE407A2113 /* PBXTargetDependency */,
+				DB179AB87D45F96797C315122DFD1670 /* PBXTargetDependency */,
+				E0C8AD0CDF9262EDED3974DE05C7030E /* PBXTargetDependency */,
+			);
+			name = "BAAlertController-Swift";
+			productName = "BAAlertController-Swift";
+			productReference = 47EDDC610710937EBA8A64665FE77B5B /* BAAlertController_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB6D1D49D9D661575CEEBD0970BCE530 /* BAAlertController-Swift-BAAlertController-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA75D40CDC90DEA57DC5D52DD7E1736 /* Build configuration list for PBXNativeTarget "BAAlertController-Swift-BAAlertController-Swift" */;
+			buildPhases = (
+				FAC42F46143F92A642B0268159838E51 /* Sources */,
+				3B3884A4753A84B8D672A7DB9BF93285 /* Frameworks */,
+				BFE5215B118C0E63ADF6FBAD75B6296E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BAAlertController-Swift-BAAlertController-Swift";
+			productName = "BAAlertController-Swift-BAAlertController-Swift";
+			productReference = 3FFEAE1B528F20DF649C21B4A75FA6B3 /* BAAlertController-Swift.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FB485D61E68C31E616E917928B512165 /* Pods-BAAlertController-Swift_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E23CBD955BFEE5C321F27020A3ACAD8 /* Build configuration list for PBXNativeTarget "Pods-BAAlertController-Swift_Example" */;
+			buildPhases = (
+				618AEEF0DFDA39F23652CA38BD83DE8B /* Headers */,
+				1FA822F495F560EF4B18A20E734E435B /* Sources */,
+				F1C5577F105D8F47F9C2CBF18CE50873 /* Frameworks */,
+				42D876B48D48B0497D38CB65F7F299CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CB35F41EC212A50A8A8D2CF02C21372 /* PBXTargetDependency */,
+				45A16C60AC6229932CD1DF838F31F8A7 /* PBXTargetDependency */,
+				AB1FA7B590A6428D5FB07086FFE90716 /* PBXTargetDependency */,
+			);
+			name = "Pods-BAAlertController-Swift_Example";
+			productName = "Pods-BAAlertController-Swift_Example";
+			productReference = C3D85079E47AE5404979452885063EC5 /* Pods_BAAlertController_Swift_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EECAD619249EAECC182835FD401921E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B5C920A69FC0394477C36D1368A66BF /* BAAlertController-Swift */,
+				DB6D1D49D9D661575CEEBD0970BCE530 /* BAAlertController-Swift-BAAlertController-Swift */,
+				375C4BE97069F7D765E16119998A3650 /* BAButton */,
+				5DF221EB97CF03C20350CDCB68F833E8 /* BATextField */,
+				FB485D61E68C31E616E917928B512165 /* Pods-BAAlertController-Swift_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42D876B48D48B0497D38CB65F7F299CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		539C3F95A9143F204A9C70AD9FC232B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2041F8AA311571FDB0438C7B20B27DDF /* BAAlertController-Swift.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B6ADB8C3AC9BDBB4986E8E433801BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82BE4BA88A51058300E4E67A95231116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE5215B118C0E63ADF6FBAD75B6296E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DDA288C96613C7D3FD239312B1E7E43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FA822F495F560EF4B18A20E734E435B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5ED8A9CD8BD52431C34AE3F021B1A1 /* Pods-BAAlertController-Swift_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCAF89F3F1DFC5FC2236F7A5C90FD86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFA50DBC8B7A88231BD125AB63944DD /* BAKit_UserDefaults.m in Sources */,
+				286492DB6606D43881952E4199598D74 /* BATextField-dummy.m in Sources */,
+				2161845E9FD07BDCA2BD14F545B100A7 /* UITextField+BAHistory.m in Sources */,
+				82491E6BB1C4EC1697648C77D36EB73F /* UITextField+BAKit.m in Sources */,
+				D6F2A71F332B0503C72A9517A85ECA6A /* UIView+BAFrame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A1D44A42AFD88496992C4C321830CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6241C569855EA026F60BF2029FFD2E /* BAAlertController-Swift-dummy.m in Sources */,
+				AA7EA5D4AB75B16752BBE0971A64DB07 /* BAAlertController_Version.swift in Sources */,
+				0B65EAC6D72C5EFAE8594AE75C4EF9D2 /* BAPGYResponseModel.m in Sources */,
+				8F9739EF63AE0DBADFB0259E2DA8781E /* UIAlertController+BAKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F619CD46C35185CB8E6C50618FC7B6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA38EB25E38A402BF0D99CA69653191 /* BAButton-dummy.m in Sources */,
+				39F55A1F7396874798241C42445E5C38 /* UIButton+BACountDown.m in Sources */,
+				229E8976C3E453A073BE9038A745B527 /* UIButton+BAKit.m in Sources */,
+				D1887FACB55A87006360585D70629EBC /* UIButton+BAState.m in Sources */,
+				9C977B77646F672F52640A1624AC2372 /* UIView+BARectCorner.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC42F46143F92A642B0268159838E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CB35F41EC212A50A8A8D2CF02C21372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BAAlertController-Swift";
+			target = 8B5C920A69FC0394477C36D1368A66BF /* BAAlertController-Swift */;
+			targetProxy = 22DFEE285249DC7A72450170B51A5AEB /* PBXContainerItemProxy */;
+		};
+		45A16C60AC6229932CD1DF838F31F8A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BAButton;
+			target = 375C4BE97069F7D765E16119998A3650 /* BAButton */;
+			targetProxy = 0FA2601E836F5420CC9F8A809627D6F8 /* PBXContainerItemProxy */;
+		};
+		AB1FA7B590A6428D5FB07086FFE90716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BATextField;
+			target = 5DF221EB97CF03C20350CDCB68F833E8 /* BATextField */;
+			targetProxy = 48BDDFCD60B3812E1AAA32A5AECE87C9 /* PBXContainerItemProxy */;
+		};
+		DB179AB87D45F96797C315122DFD1670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BAButton;
+			target = 375C4BE97069F7D765E16119998A3650 /* BAButton */;
+			targetProxy = EEEE7C63B417E3C672EC619D1946DBAC /* PBXContainerItemProxy */;
+		};
+		E0C8AD0CDF9262EDED3974DE05C7030E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BATextField;
+			target = 5DF221EB97CF03C20350CDCB68F833E8 /* BATextField */;
+			targetProxy = CBE1C583B1DF3AC0DA8011D84303125D /* PBXContainerItemProxy */;
+		};
+		F8F344E50888D625EF27FDCE407A2113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BAAlertController-Swift-BAAlertController-Swift";
+			target = DB6D1D49D9D661575CEEBD0970BCE530 /* BAAlertController-Swift-BAAlertController-Swift */;
+			targetProxy = 1A814B741A971BBD55FD98662841B0AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A8CCCED4A696EEB5EF88353D50DCC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7030A2A6DBF6E9E60DC09BC04E9671EF /* Pods-BAAlertController-Swift_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BAAlertController-Swift_Example/Pods-BAAlertController-Swift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BAAlertController-Swift_Example/Pods-BAAlertController-Swift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28EDD98C756F688903EDBD95A390B5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2AE8248A7150B0CC81D05FD49DB6D7 /* BAAlertController-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BAAlertController-Swift/BAAlertController-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BAAlertController-Swift/BAAlertController-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BAAlertController-Swift/BAAlertController-Swift.modulemap";
+				PRODUCT_MODULE_NAME = BAAlertController_Swift;
+				PRODUCT_NAME = BAAlertController_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		303E27C03C26887D1FB7779082856B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D41A5B5C2155CCC202A64E388BF641 /* BAButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BAButton/BAButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BAButton/BAButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BAButton/BAButton.modulemap";
+				PRODUCT_MODULE_NAME = BAButton;
+				PRODUCT_NAME = BAButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		397D02B4DBC1C5637B0797E21A139E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3E025AB42FF5A451D7E4493150353C /* Pods-BAAlertController-Swift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BAAlertController-Swift_Example/Pods-BAAlertController-Swift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BAAlertController-Swift_Example/Pods-BAAlertController-Swift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		437EE44CC157572B9155D0C1B21A4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D41A5B5C2155CCC202A64E388BF641 /* BAButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BAButton/BAButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BAButton/BAButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BAButton/BAButton.modulemap";
+				PRODUCT_MODULE_NAME = BAButton;
+				PRODUCT_NAME = BAButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5153DC2E9BB4F6D6F85AF7C0A4A2A27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6A949A208667F02694AF29D5DCC8D4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		79BD364A48A705826B920A70A596B869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2AE8248A7150B0CC81D05FD49DB6D7 /* BAAlertController-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BAAlertController-Swift/BAAlertController-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BAAlertController-Swift/BAAlertController-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BAAlertController-Swift/BAAlertController-Swift.modulemap";
+				PRODUCT_MODULE_NAME = BAAlertController_Swift;
+				PRODUCT_NAME = BAAlertController_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A6B90DA11DF54CF4124CE6E5246BDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2AE8248A7150B0CC81D05FD49DB6D7 /* BAAlertController-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BAAlertController-Swift";
+				INFOPLIST_FILE = "Target Support Files/BAAlertController-Swift/ResourceBundle-BAAlertController-Swift-BAAlertController-Swift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "BAAlertController-Swift";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BD13197117727B6727ECBBF95F5051CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 523C3C60D5ACD0101A474A3AFBDCF0CA /* BATextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BATextField/BATextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BATextField/BATextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BATextField/BATextField.modulemap";
+				PRODUCT_MODULE_NAME = BATextField;
+				PRODUCT_NAME = BATextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1E06BA57AF154687AA85D8B78627F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2AE8248A7150B0CC81D05FD49DB6D7 /* BAAlertController-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BAAlertController-Swift";
+				INFOPLIST_FILE = "Target Support Files/BAAlertController-Swift/ResourceBundle-BAAlertController-Swift-BAAlertController-Swift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "BAAlertController-Swift";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FB7D29D8C317735BA9A8919699860BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 523C3C60D5ACD0101A474A3AFBDCF0CA /* BATextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BATextField/BATextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BATextField/BATextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BATextField/BATextField.modulemap";
+				PRODUCT_MODULE_NAME = BATextField;
+				PRODUCT_NAME = BATextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5153DC2E9BB4F6D6F85AF7C0A4A2A27F /* Debug */,
+				6A949A208667F02694AF29D5DCC8D4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B8AB4BA53794AD478F015445754B812 /* Build configuration list for PBXNativeTarget "BATextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7D29D8C317735BA9A8919699860BAD /* Debug */,
+				BD13197117727B6727ECBBF95F5051CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E23CBD955BFEE5C321F27020A3ACAD8 /* Build configuration list for PBXNativeTarget "Pods-BAAlertController-Swift_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8CCCED4A696EEB5EF88353D50DCC51 /* Debug */,
+				397D02B4DBC1C5637B0797E21A139E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E217B18E425D25C3C0A1818A09CBA6 /* Build configuration list for PBXNativeTarget "BAAlertController-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EDD98C756F688903EDBD95A390B5C6 /* Debug */,
+				79BD364A48A705826B920A70A596B869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA75D40CDC90DEA57DC5D52DD7E1736 /* Build configuration list for PBXNativeTarget "BAAlertController-Swift-BAAlertController-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E06BA57AF154687AA85D8B78627F67 /* Debug */,
+				7A6B90DA11DF54CF4124CE6E5246BDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC8CD8A3EEEFC5A0C85665990D6B2C61 /* Build configuration list for PBXNativeTarget "BAButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437EE44CC157572B9155D0C1B21A4745 /* Debug */,
+				303E27C03C26887D1FB7779082856B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

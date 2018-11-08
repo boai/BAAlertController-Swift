@@ -1,0 +1,31 @@
+PODS:
+  - BAAlertController-Swift (1.0.1):
+    - BAAlertController-Swift/BAAlertController-Swift (= 1.0.1)
+    - BAAlertController-Swift/Tools (= 1.0.1)
+  - BAAlertController-Swift/BAAlertController-Swift (1.0.1):
+    - BAButton
+  - BAAlertController-Swift/Tools (1.0.1):
+    - BATextField
+  - BAButton (2.6.6)
+  - BATextField (1.0.5)
+
+DEPENDENCIES:
+  - BAAlertController-Swift (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BAButton
+    - BATextField
+
+EXTERNAL SOURCES:
+  BAAlertController-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BAAlertController-Swift: f5bff6a6adaa440938ab3a864d364f9d13afaa4e
+  BAButton: ae61e639562052c4a6ac5e119199a0054f239c05
+  BATextField: 6f9ecf4d3196c61453abca467885daf9645df85f
+
+PODFILE CHECKSUM: 66b4225e06ec442fe4a8274ddadfe1ed46770548
+
+COCOAPODS: 1.6.0.beta.2

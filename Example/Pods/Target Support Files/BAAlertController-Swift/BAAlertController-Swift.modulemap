@@ -1,0 +1,6 @@
+framework module BAAlertController_Swift {
+  umbrella header "BAAlertController-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
